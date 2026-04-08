@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Modern</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="selection-screen" class="screen">
+            <h1>Player 1: Choose your Symbol</h1>
+            <div class="btn-group">
+                <button class="choice-btn x-btn" onclick="startGame('X')">X</button>
+                <button class="choice-btn o-btn" onclick="startGame('O')">O</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <div id="turn-indicator">Player 1</div>
+            
+            <div class="grid" id="grid">
+                </div>
+
+            <button id="undo-btn" onclick="clearLastInput()">Clear Wrong Input</button>
+            <div id="winner-label"></div>
+
+            <div id="restart-options" class="hidden">
+                <p>Play Again?</p>
+                <div class="btn-group">
+                    <button class="yes-btn" onclick="location.reload()">Yes</button>
+                    <button class="no-btn" onclick="endMatch()">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="end-screen" class="screen hidden">
+            <h1 class="match-ends">Match Ends</h1>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
