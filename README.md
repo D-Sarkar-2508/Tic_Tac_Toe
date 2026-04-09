@@ -7,7 +7,7 @@ A sleek, responsive, and modern Tic-Tac-Toe web application built with **Flask**
 ## 🚀 Live Demo
 You can try the live application hosted on Hugging Face Spaces here:
 
-### **👉 [Click Here to Open the App](https://huggingface.co/spaces/coder-diya/tic-tac-toe)**
+### **👉 [Click Here to Open the App](https://coder-diya-tic-tac-toe.hf.space)**
 
 ---
 
